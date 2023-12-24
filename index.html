@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+
+  <link rel="stylesheet" href="css/desk.css">
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <link rel="icon" href="img/1.png" type="image/x-icon">
+
+  <link href='https://fonts.googleapis.com/css?family=Irish Grover' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Vox Vista - Chat with anyone</title>
+</head>
+
+<body>
+  <section class="main" id="main">
+    <!-- ================================================ sidebar section start =============================================== -->
+    <div id="contentContainer" class="content_container">
+    
+    <div class="sidebar">
+
+      <div class="logo">
+        <img src="/img/1.png" alt="">
+        <h1>VOX<span> VISTA</span></h1>
+      </div>
+
+      <div class="chats">
+        <h2>Chats With <br> Your friends</h2>
+        <button class="main-btn" id="main-text">
+          <a href="" class="btn-text"><i class="fa-solid fa-magnifying-glass"></i>
+            Search Your Friends
+          </a>
+        </button>
+        <button class="btn" id="main-text">
+          <a href="vaild.html" class="btn-text" style="margin-left: 15px;"><i class="fa-solid fa-user-plus"></i> Add new
+            friend</a>
+        </button>
+        <button class="main-btn" id="friend-btn">
+          <a href="" class="btn-text">
+            <h1>Your Friends</h1>
+          </a>
+        </button>
+        <!-- ======================================= Friends sections start ================================================== -->
+        <div class="friends" id="leftbar">
+
+          <div class="use"><img src="/img/Group 18.png " alt="">
+            <a href="#" class="text-friend" onclick="showChatProfile('user1')">
+              <h1>Rohan <br>
+                <p>Hi, I am Rohan</p>
+              </h1>
+            </a>
+          </div>
+
+          <div class="use"><img src="/img/Group 18.png" alt="">
+            <a href="#" class="text-friend" onclick="showChatProfile('user2')">
+              <h1>Rohan <br>
+                <p>Hi, I am Rohan</p>
+              </h1>
+            </a>
+          </div>
+
+          <div class="use"><img src="/img/Group 18.png" alt="">
+            <a href="#" class="text-friend" onclick="showChatProfile('user3')">
+              <h1>Rohan <br>
+                <p>Hi, I am Rohan</p>
+              </h1>
+            </a>
+          </div>
+
+          <div class="use"><img src="/img/Group 18.png" alt="">
+            <a href="#" class="text-friend" onclick="showChatProfile('user4')">
+              <h1>Rohan <br>
+                <p>Hi, I am Rohan</p>
+              </h1>
+            </a>
+          </div>
+
+          <div class="use"><img src="/img/Group 18.png" alt="">
+            <a href="#" class="text-friend" onclick="showChatProfile('user5')">
+              <h1>Rohan <br>
+                <p>Hi, I am Rohan</p>
+              </h1>
+            </a>
+          </div>
+
+          <div class="use"><img src="/img/Group 18.png" alt="">
+            <a href="#" class="text-friend" onclick="showChatProfile('user6')">
+              <h1>Rohan <br>
+                <p>Hi, I am Rohan</p>
+              </h1>
+            </a>
+          </div>
+
+          <div class="use"><img src="/img/Group 18.png" alt="">
+            <a href="#" class="text-friend" onclick="showChatProfile('user7')">
+              <h1>Rohan <br>
+                <p>Hi, I am Rohan</p>
+              </h1>
+            </a>
+          </div>
+
+          <div class="use"><img src="/img/Group 18.png" alt="">
+            <a href="#" class="text-friend" onclick="showChatProfile('user2')">
+              <h1>Rohan <br>
+                <p>Hi, I am Rohan</p>
+              </h1>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================== midbar section start ================================================ -->
+    <div class="midbar" id="midbar">
+
+      <!-- default- container starts -->
+      <div id="default-content" >
+        <div class="main-logo">
+          <img src="/img/1.png" alt="">
+        </div>
+
+        <div class="user">
+          <h1>VOX<span> VISTA</span> <br> For Windows <br> Connect with anyone, anytime, anywhere.</h1>
+        </div>
+      </div>
+
+      <!--Default container end -->
+
+      <!-- User Chat Profile Start -->
+
+      <div id="chat-profile-container" class="chat_profile" style="display: none;" >
+
+
+         <div class="user_bar">
+          <div class="user_img">
+            <img src="/img/uifaces-popular-image.jpg" alt="user_img">
+            <h1>Rohan <br><p> online </p></h1> 
+          </div>
+          <div class="call_section">
+            <i class="fa-solid fa-video fa-lg" style="color: #fff;"></i>
+            <i class="fa-solid fa-phone-volume fa-lg" style="color: #fff;"></i>
+            <i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #fff;"></i>
+          </div>
+         </div>
+
+         <!-- text area start -->
+         <div class="message_bar">
+
+          <div class="sticker_section">
+            <i class="fa-regular fa-face-smile fa-lg" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-paperclip fa-lg" style="color: #ffffff;"></i>
+          </div>
+
+          <div class="message_section" contenteditable="true">
+            <p>Enter Your Message ...... </p>
+            
+          </div>
+          <button onclick="sendMessage()" class="send_btn"><i class="fa-regular fa-paper-plane fa-lg" style="color: #ffffff;"></i></button>
+          <i class="fa-solid fa-microphone fa-lg" style="color: #ffffff; margin-left: 15px;"></i>
+         </div>
+      </div>
+    </div>
+
+    <!-- User Chat Profile End -->
+    <!-- ==================================================== bar section start ================================================== -->
+    <div class="bar">
+      <div class="rightbar1">
+        <h1 class="head-text">Chats</h1>
+        <button class="main-btn" id="friend-btn">
+          <a href="" class="btn-text">Delete Your Chats</a>
+        </button>
+
+        <a href="" class="bell"><i class="fa-regular fa-bell fa-2x" style="color: #00649a;"></i>
+          <h1>Notifications</h1>
+        </a>
+
+        <button class="btn" id="friend-btn">
+          <a href="" class="btn-text" style="margin-left: 15px;"><i class="fa-solid fa-right-from-bracket"></i>
+            Logout</a>
+        </button>
+      </div>
+      <!-- ============================================ rightbar2 section start ============================================== -->
+      <div class="rightbar2">
+        <h1 class="head-text">Your Profile</h1>
+        <!-- user_details -->
+        <div class="user_details">
+          <img src="/img/uifaces-popular-image.jpg" alt="user_img">
+          <h1>
+            Isha Gupta <br>
+            <p>Belive in the equation of karma.</p>
+          </h1>
+        </div>
+        <!-- email_details-->
+        <div class="details">
+          <h1>Your Email
+            <p>ishagupta@gmail.com</p>
+          </h1>
+        </div>
+
+        <!-- user_profile-details -->
+        <div class="edit_profile">
+          <img width="60" height="60" src="https://img.icons8.com/color/48/circled-user-male-skin-type-1-2--v1.png"
+            alt="circled-user-male-skin-type-1-2--v1" />
+          <p>Update your profile picture</p>
+        </div>
+
+        <!--read_only-->
+        <div class="read_only">
+          <img width="50" height="50" src="https://img.icons8.com/ios/50/settings--v1.png" alt="settings--v1" />
+          <h1>Settings</h1>
+        </div>
+
+        <!--pp-->
+        <div class="privacy-policy">
+          <a href="">
+            <h1>Privacy Policy</h1>
+          </a>
+          <a href="">
+            <h1>Help</h1>
+          </a>
+          <button class="btn" id="main-text">
+            <a href="vaild.html" class="btn-text" style="margin-left: 30px;">Delete Your Account</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
